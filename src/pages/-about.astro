@@ -1,0 +1,209 @@
+---
+import '../styles/site.css';
+const siteId   = "P2460";
+const siteName = "Pawspurrfect Pet Care Service";
+const baseUrl  = "/P2460";
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me | Pawspurrfect Pet Care Service, Keighley</title>
+  <meta name="description" content="Learn about Pawspurrfect Pet Care Service, a family run business based in Silsden with over 30 years of animal care experience. Fully insured, Bradford Council regulated, NARP registered." />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+</head>
+<body>
+
+  <!-- Preview Banner -->
+  <div class="bg-[#1C3F1B] text-white text-center text-sm py-2 px-4">
+    Preview redesign for Pawspurrfect Pet Care Service by
+    <a href={`https://biscuitweb.co.uk/activate?id=${siteId}&name=Pawspurrfect%20Pet%20Care%20Service`} class="underline font-semibold ml-1">Biscuit Web</a>
+  </div>
+
+  <!-- Header -->
+  <header class="bg-[#2D6A2C] text-white sticky top-0 z-50 shadow-lg">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href={baseUrl} class="font-display font-bold text-lg leading-tight text-white">
+        🐾 Pawspurrfect<br class="hidden sm:block" /><span class="text-sm font-normal opacity-90">Pet Care Service</span>
+      </a>
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-6 text-sm font-semibold">
+        <a href={baseUrl} class="text-white hover:text-[#F5C518] transition-colors">Home</a>
+        <a href={`${baseUrl}/-about`} class="text-[#F5C518]">About Me</a>
+        <a href={`${baseUrl}/-location`} class="text-white hover:text-[#F5C518] transition-colors">Our Location</a>
+        <a href={`${baseUrl}/-pet-plans`} class="text-white hover:text-[#F5C518] transition-colors">Pet Care Plans</a>
+        <a href={`${baseUrl}/-contact`} class="bg-[#F5C518] text-[#1C3F1B] px-4 py-2 rounded font-bold hover:bg-yellow-400 transition-colors">Contact Us</a>
+      </nav>
+      <!-- Mobile Hamburger -->
+      <button id="menu-toggle" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Open menu">
+        <span class="block w-6 h-0.5 bg-white"></span>
+        <span class="block w-6 h-0.5 bg-white"></span>
+        <span class="block w-6 h-0.5 bg-white"></span>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#1C3F1B] px-4 pb-4">
+      <nav class="flex flex-col gap-3 text-sm font-semibold pt-2">
+        <a href={baseUrl} class="text-white hover:text-[#F5C518] py-1 border-b border-[#2D6A2C]">Home</a>
+        <a href={`${baseUrl}/-about`} class="text-[#F5C518] py-1 border-b border-[#2D6A2C]">About Me</a>
+        <a href={`${baseUrl}/-location`} class="text-white hover:text-[#F5C518] py-1 border-b border-[#2D6A2C]">Our Location</a>
+        <a href={`${baseUrl}/-pet-plans`} class="text-white hover:text-[#F5C518] py-1 border-b border-[#2D6A2C]">Pet Care Plans</a>
+        <a href={`${baseUrl}/-contact`} class="text-white hover:text-[#F5C518] py-1">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="bg-[#2D6A2C] py-14">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="inline-flex items-center gap-2 bg-white/10 border border-white/30 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
+        <span>📍</span> Silsden, near Keighley
+      </div>
+      <h1 class="text-4xl md:text-5xl font-display font-bold text-white mb-3">About Paws Purrfect</h1>
+      <p class="text-white/80 text-lg max-w-xl">Specialist pet care when you can't be there.</p>
+    </div>
+  </section>
+
+  <!-- About Content -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-12 items-start">
+        <div>
+          <h2 class="text-2xl font-display font-bold text-[#1C3F1B] mb-4">Who I am</h2>
+          <p class="text-[#3D5C3C] mb-4">
+            Here at Paws Purrfect my intention is to provide a professional service with an understanding tailored to each individual pet. Allowing me to care for your loved one is seen as a position of responsibility and trust, neither of which is taken lightly.
+          </p>
+          <p class="text-[#3D5C3C] mb-4">
+            Paws Purrfect is a family run business based in Silsden. I offer a service tailored to the individual which is fully insured, regulated by Bradford Council, and registered with the National Association of Registered Pet Sitters (NARP).
+          </p>
+          <p class="text-[#3D5C3C] mb-4">
+            From Shire horses to Shetland ponies, dogs and cats to rabbits and hamsters, I love to care for all kinds of pets. Built on over 30 years of experience caring for both domestic and equine animals, having managed my own livery stables for over 10 years, I'm now offering my services to smaller family pets.
+          </p>
+          <p class="text-[#3D5C3C] mb-6">
+            My general working area covers the triangle between Keighley, Ilkley and Skipton. If you're unsure whether you're within the area I cover, please don't hesitate to get in touch.
+          </p>
+
+          <h2 class="text-2xl font-display font-bold text-[#1C3F1B] mb-4">Free Consultation</h2>
+          <p class="text-[#3D5C3C] mb-6">
+            Call me to arrange a free, no-obligation consultation for your pet. If you're unsure about any of the information provided, or unsure whether I cover your area, get in touch.
+          </p>
+
+          <a href="tel:+447703368164" class="inline-block bg-[#2D6A2C] text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-[#1C3F1B] transition-colors">
+            📞 Call 07703368164
+          </a>
+        </div>
+
+        <div class="space-y-6">
+          <!-- Meet the animals -->
+          <div class="bg-[#F0F7EF] rounded-2xl p-6 border border-[#B8D9B6]">
+            <h3 class="font-display font-bold text-[#1C3F1B] text-xl mb-4">🐾 Meet the family</h3>
+            <p class="text-[#3D5C3C] text-sm mb-4">
+              I have a ten year old German pointer called Duke and three horses named Totts, Bobby and Siskin, all looking forward to meeting you!
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-white border border-[#B8D9B6] text-[#1C3F1B] text-xs font-semibold px-3 py-1.5 rounded-full">🐕 Duke the German Pointer</span>
+              <span class="bg-white border border-[#B8D9B6] text-[#1C3F1B] text-xs font-semibold px-3 py-1.5 rounded-full">🐴 Totts</span>
+              <span class="bg-white border border-[#B8D9B6] text-[#1C3F1B] text-xs font-semibold px-3 py-1.5 rounded-full">🐴 Bobby</span>
+              <span class="bg-white border border-[#B8D9B6] text-[#1C3F1B] text-xs font-semibold px-3 py-1.5 rounded-full">🐴 Siskin</span>
+            </div>
+          </div>
+
+          <!-- Credentials -->
+          <div class="bg-[#F0F7EF] rounded-2xl p-6 border border-[#B8D9B6]">
+            <h3 class="font-display font-bold text-[#1C3F1B] text-xl mb-4">🎖️ My credentials</h3>
+            <ul class="space-y-3 text-sm text-[#3D5C3C]">
+              <li class="flex items-start gap-3">
+                <span class="text-[#2D6A2C] font-bold mt-0.5">✓</span>
+                <span>Fully insured for pet care and boarding</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-[#2D6A2C] font-bold mt-0.5">✓</span>
+                <span>Regulated and licensed by Bradford Council</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-[#2D6A2C] font-bold mt-0.5">✓</span>
+                <span>Registered with NARP (National Association of Registered Pet Sitters)</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-[#2D6A2C] font-bold mt-0.5">✓</span>
+                <span>Over 30 years caring for domestic and equine animals</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-[#2D6A2C] font-bold mt-0.5">✓</span>
+                <span>10+ years managing my own livery stables</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Location highlight -->
+          <div class="bg-[#1A6BA0] rounded-2xl p-6 text-white">
+            <h3 class="font-display font-bold text-white text-xl mb-3">🌿 Our location</h3>
+            <p class="text-white/80 text-sm">
+              With extensive gardens and fields at home, and close proximity to Addingham Moorside and Farnhill Moor, I'm ideally situated for your pet to enjoy plenty of fresh air and exercise.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-12 bg-[#F5C518]">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <h2 class="text-2xl font-display font-bold text-[#1C3F1B] mb-3">Get in touch today</h2>
+      <p class="text-[#1C3F1B]/80 mb-6">I'd love to meet you and your pet. Call me for a free, no-obligation chat about what I can do for you.</p>
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="tel:+447703368164" class="bg-[#1C3F1B] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#2D6A2C] transition-colors">
+          📞 Call 07703368164
+        </a>
+        <a href={`${baseUrl}/-contact`} class="border-2 border-[#1C3F1B] text-[#1C3F1B] px-6 py-3 rounded-lg font-bold hover:bg-[#1C3F1B] hover:text-white transition-colors">
+          Send a Message
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#1C3F1B] text-white pt-12 pb-6">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <h3 class="font-display font-bold text-lg mb-3">🐾 Pawspurrfect</h3>
+          <p class="text-white/70 text-sm leading-relaxed">Specialist pet care when you can't be there. Family run, fully insured, Bradford Council regulated and NARP registered.</p>
+        </div>
+        <div>
+          <h3 class="font-display font-bold text-base mb-3">Pages</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href={baseUrl} class="text-white/70 hover:text-white transition-colors">Home</a></li>
+            <li><a href={`${baseUrl}/-about`} class="text-white/70 hover:text-white transition-colors">About Me</a></li>
+            <li><a href={`${baseUrl}/-location`} class="text-white/70 hover:text-white transition-colors">Our Location</a></li>
+            <li><a href={`${baseUrl}/-pet-plans`} class="text-white/70 hover:text-white transition-colors">Pet Care Plans</a></li>
+            <li><a href={`${baseUrl}/-contact`} class="text-white/70 hover:text-white transition-colors">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-display font-bold text-base mb-3">Contact</h3>
+          <ul class="space-y-2 text-sm text-white/70">
+            <li>📍 Arbour Top, Keighley</li>
+            <li><a href="tel:+447703368164" class="hover:text-white transition-colors">📞 07703368164</a></li>
+            <li><a href="mailto:enquiries@pawspurrfect.co.uk" class="hover:text-white transition-colors">✉️ enquiries@pawspurrfect.co.uk</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-6 text-center text-sm text-white/40">
+        &copy; {new Date().getFullYear()} Pawspurrfect Pet Care Service. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const menu   = document.getElementById('mobile-menu');
+    if (toggle && menu) {
+      toggle.addEventListener('click', () => menu.classList.toggle('hidden'));
+    }
+  </script>
+
+</body>
+</html>
