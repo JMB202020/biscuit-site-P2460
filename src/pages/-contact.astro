@@ -1,52 +1,44 @@
 ---
 import '../styles/site.css';
-const siteId   = "P2460";
-const siteName = "Pawspurrfect Pet Care Service";
-const baseUrl  = "/P2460";
+const baseUrl = "/P2460";
 ---
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us | Pawspurrfect Pet Care Service, Keighley</title>
-  <meta name="description" content="Get in touch with Pawspurrfect Pet Care Service. Call 07703368164 or email enquiries@pawspurrfect.co.uk. Based in Arbour Top, Keighley." />
+  <title>Contact Us | Pawspurrfect Pet Care Service, Silsden</title>
+  <meta name="description" content="Get in touch with Pawspurrfect Pet Care Service. Call 07703368164 or email enquiries@pawspurrfect.co.uk. Based in Silsden, near Keighley." />
   <link rel="icon" type="image/png" href="/favicon.png" />
 </head>
 <body>
 
   <!-- Preview Banner -->
-  <div class="bg-[#1C3F1B] text-white text-center text-sm py-2 px-4">
-    Preview redesign for Pawspurrfect Pet Care Service by
-    <a href={`https://biscuitweb.co.uk/activate?id=${siteId}&name=Pawspurrfect%20Pet%20Care%20Service`} class="underline font-semibold ml-1">Biscuit Web</a>
-  </div>
+  <div style="background:#B45309;color:white;padding:10px 16px;text-align:center;font-size:14px;position:sticky;top:0;z-index:50"><div style="max-width:56rem;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap"><span>Preview redesign for <strong>Pawspurrfect Pet Care Service</strong> by <strong>Biscuit Web</strong></span><a href="https://biscuitweb.co.ukhttps://biscuitweb.co.uk/activate?id=P2460&name=Pawspurrfect%20Pet%20Care%20Service" style="display:inline-flex;align-items:center;padding:4px 16px;background:white;color:#B45309;font-weight:700;font-size:12px;border-radius:9999px;text-decoration:none">Like it? Just £20/month</a></div></div>
 
   <!-- Header -->
-  <header class="bg-[#2D6A2C] text-white sticky top-0 z-50 shadow-lg">
+  <header class="bg-[#2D6A2C] text-white sticky top-0 z-40 shadow-lg">
     <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
       <a href={baseUrl} class="font-display font-bold text-lg leading-tight text-white">
         🐾 Pawspurrfect<br class="hidden sm:block" /><span class="text-sm font-normal opacity-90">Pet Care Service</span>
       </a>
-      <!-- Desktop Nav -->
       <nav class="hidden md:flex items-center gap-6 text-sm font-semibold">
         <a href={baseUrl} class="text-white hover:text-[#F5C518] transition-colors">Home</a>
-        <a href={`${baseUrl}/-about`} class="text-white hover:text-[#F5C518] transition-colors">About Me</a>
+        <a href={`${baseUrl}/-about`} class="text-white hover:text-[#F5C518] transition-colors">About Us</a>
         <a href={`${baseUrl}/-location`} class="text-white hover:text-[#F5C518] transition-colors">Our Location</a>
         <a href={`${baseUrl}/-pet-plans`} class="text-white hover:text-[#F5C518] transition-colors">Pet Care Plans</a>
         <a href={`${baseUrl}/-contact`} class="bg-[#F5C518] text-[#1C3F1B] px-4 py-2 rounded font-bold hover:bg-yellow-400 transition-colors">Contact Us</a>
       </nav>
-      <!-- Mobile Hamburger -->
       <button id="menu-toggle" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Open menu">
         <span class="block w-6 h-0.5 bg-white"></span>
         <span class="block w-6 h-0.5 bg-white"></span>
         <span class="block w-6 h-0.5 bg-white"></span>
       </button>
     </div>
-    <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden md:hidden bg-[#1C3F1B] px-4 pb-4">
       <nav class="flex flex-col gap-3 text-sm font-semibold pt-2">
         <a href={baseUrl} class="text-white hover:text-[#F5C518] py-1 border-b border-[#2D6A2C]">Home</a>
-        <a href={`${baseUrl}/-about`} class="text-white hover:text-[#F5C518] py-1 border-b border-[#2D6A2C]">About Me</a>
+        <a href={`${baseUrl}/-about`} class="text-white hover:text-[#F5C518] py-1 border-b border-[#2D6A2C]">About Us</a>
         <a href={`${baseUrl}/-location`} class="text-white hover:text-[#F5C518] py-1 border-b border-[#2D6A2C]">Our Location</a>
         <a href={`${baseUrl}/-pet-plans`} class="text-white hover:text-[#F5C518] py-1 border-b border-[#2D6A2C]">Pet Care Plans</a>
         <a href={`${baseUrl}/-contact`} class="text-[#F5C518] py-1">Contact Us</a>
@@ -54,11 +46,18 @@ const baseUrl  = "/P2460";
     </div>
   </header>
 
-  <!-- Page Hero -->
-  <section class="bg-[#2D6A2C] py-14">
-    <div class="max-w-6xl mx-auto px-4">
+  <!-- Page Hero — full-bleed image -->
+  <section class="relative min-h-[40vh] flex items-end overflow-hidden pb-12">
+    <img
+      src="/P2460/images/slide5.jpg"
+      alt="Contact Pawspurrfect Pet Care Service"
+      class="absolute inset-0 w-full h-full object-cover object-center"
+      fetchpriority="high"
+    />
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="relative z-10 max-w-6xl mx-auto px-4 w-full">
       <h1 class="text-4xl md:text-5xl font-display font-bold text-white mb-3">Get in Touch</h1>
-      <p class="text-white/80 text-lg max-w-xl">I'd love to hear from you. Whether you have a question about my services or you're ready to book, get in touch and I'll get back to you as soon as I can.</p>
+      <p class="text-white/80 text-lg max-w-xl">We'd love to hear from you. Whether you have a question about our services or you're ready to book, get in touch and we'll get back to you as soon as we can.</p>
     </div>
   </section>
 
@@ -75,15 +74,15 @@ const baseUrl  = "/P2460";
             <div class="flex items-start gap-4">
               <div class="w-10 h-10 bg-[#F0F7EF] rounded-full flex items-center justify-center text-lg flex-shrink-0">📍</div>
               <div>
-                <div class="font-semibold text-[#1C3F1B]">Address</div>
-                <div class="text-[#3D5C3C] text-sm">Arbour Top, Keighley</div>
+                <div class="font-semibold text-[#1C3F1B]">Area</div>
+                <div class="text-[#3D5C3C] text-sm">Silsden, West Yorkshire (covering Keighley, Ilkley, Skipton &amp; surrounding area)</div>
               </div>
             </div>
             <div class="flex items-start gap-4">
               <div class="w-10 h-10 bg-[#F0F7EF] rounded-full flex items-center justify-center text-lg flex-shrink-0">📞</div>
               <div>
                 <div class="font-semibold text-[#1C3F1B]">Mobile</div>
-                <a href="tel:+447703368164" class="text-[#2D6A2C] font-semibold hover:underline">07703368164</a>
+                <a href="tel:07703368164" class="text-[#2D6A2C] font-semibold hover:underline">07703368164</a>
               </div>
             </div>
             <div class="flex items-start gap-4">
@@ -96,10 +95,10 @@ const baseUrl  = "/P2460";
           </div>
 
           <!-- Free Consultation callout -->
-          <div class="bg-[#F5C518]/20 border border-[#F5C518] rounded-xl p-5 mb-8">
+          <div class="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-8">
             <h3 class="font-display font-bold text-[#1C3F1B] text-base mb-2">💬 Free Consultation</h3>
             <p class="text-sm text-[#3D5C3C]">
-              Call me to arrange a free, no-obligation consultation for your pet. If you're unsure about any of the information, or unsure whether I cover your area, just get in touch and I'll help.
+              Call us to arrange a free, no-obligation consultation for your pet. If you're unsure about any of the information, or whether we cover your area, just get in touch and we'll help.
             </p>
           </div>
 
@@ -176,7 +175,7 @@ const baseUrl  = "/P2460";
                 name="message"
                 rows="5"
                 required
-                placeholder="Tell me a bit about your pet and what you need..."
+                placeholder="Tell us a bit about your pet and what you need..."
                 class="w-full border border-[#B8D9B6] rounded-lg px-4 py-3 text-sm text-[#1C3F1B] placeholder-[#3D5C3C]/50 focus:outline-none focus:border-[#2D6A2C] focus:ring-1 focus:ring-[#2D6A2C] bg-white resize-none"
               ></textarea>
             </div>
@@ -198,24 +197,24 @@ const baseUrl  = "/P2460";
     <div class="max-w-6xl mx-auto px-4">
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-8">
         <div>
-          <h3 class="font-display font-bold text-lg mb-3">🐾 Pawspurrfect</h3>
+          <h3 class="font-display font-bold text-lg mb-3 text-white">🐾 Pawspurrfect</h3>
           <p class="text-white/70 text-sm leading-relaxed">Specialist pet care when you can't be there. Family run, fully insured, Bradford Council regulated and NARP registered.</p>
         </div>
         <div>
-          <h3 class="font-display font-bold text-base mb-3">Pages</h3>
+          <h3 class="font-display font-bold text-base mb-3 text-white">Pages</h3>
           <ul class="space-y-2 text-sm">
             <li><a href={baseUrl} class="text-white/70 hover:text-white transition-colors">Home</a></li>
-            <li><a href={`${baseUrl}/-about`} class="text-white/70 hover:text-white transition-colors">About Me</a></li>
+            <li><a href={`${baseUrl}/-about`} class="text-white/70 hover:text-white transition-colors">About Us</a></li>
             <li><a href={`${baseUrl}/-location`} class="text-white/70 hover:text-white transition-colors">Our Location</a></li>
             <li><a href={`${baseUrl}/-pet-plans`} class="text-white/70 hover:text-white transition-colors">Pet Care Plans</a></li>
             <li><a href={`${baseUrl}/-contact`} class="text-white/70 hover:text-white transition-colors">Contact Us</a></li>
           </ul>
         </div>
         <div>
-          <h3 class="font-display font-bold text-base mb-3">Contact</h3>
+          <h3 class="font-display font-bold text-base mb-3 text-white">Contact</h3>
           <ul class="space-y-2 text-sm text-white/70">
-            <li>📍 Arbour Top, Keighley</li>
-            <li><a href="tel:+447703368164" class="hover:text-white transition-colors">📞 07703368164</a></li>
+            <li>📍 Silsden, West Yorkshire</li>
+            <li><a href="tel:07703368164" class="hover:text-white transition-colors">📞 07703368164</a></li>
             <li><a href="mailto:enquiries@pawspurrfect.co.uk" class="hover:text-white transition-colors">✉️ enquiries@pawspurrfect.co.uk</a></li>
           </ul>
         </div>

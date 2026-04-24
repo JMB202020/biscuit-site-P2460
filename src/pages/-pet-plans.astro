@@ -1,52 +1,44 @@
 ---
 import '../styles/site.css';
-const siteId   = "P2460";
-const siteName = "Pawspurrfect Pet Care Service";
-const baseUrl  = "/P2460";
+const baseUrl = "/P2460";
 ---
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pet Care Plans &amp; Prices | Pawspurrfect, Keighley</title>
+  <title>Pet Care Plans &amp; Prices | Pawspurrfect, Silsden</title>
   <meta name="description" content="Home boarding from £15/day, dog walking from £6, pet visiting from £6, and pet taxi service. Tailored pet care plans in Keighley, Silsden, Ilkley and Skipton." />
   <link rel="icon" type="image/png" href="/favicon.png" />
 </head>
 <body>
 
   <!-- Preview Banner -->
-  <div class="bg-[#1C3F1B] text-white text-center text-sm py-2 px-4">
-    Preview redesign for Pawspurrfect Pet Care Service by
-    <a href={`https://biscuitweb.co.uk/activate?id=${siteId}&name=Pawspurrfect%20Pet%20Care%20Service`} class="underline font-semibold ml-1">Biscuit Web</a>
-  </div>
+  <div style="background:#B45309;color:white;padding:10px 16px;text-align:center;font-size:14px;position:sticky;top:0;z-index:50"><div style="max-width:56rem;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap"><span>Preview redesign for <strong>Pawspurrfect Pet Care Service</strong> by <strong>Biscuit Web</strong></span><a href="https://biscuitweb.co.ukhttps://biscuitweb.co.uk/activate?id=P2460&name=Pawspurrfect%20Pet%20Care%20Service" style="display:inline-flex;align-items:center;padding:4px 16px;background:white;color:#B45309;font-weight:700;font-size:12px;border-radius:9999px;text-decoration:none">Like it? Just £20/month</a></div></div>
 
   <!-- Header -->
-  <header class="bg-[#2D6A2C] text-white sticky top-0 z-50 shadow-lg">
+  <header class="bg-[#2D6A2C] text-white sticky top-0 z-40 shadow-lg">
     <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
       <a href={baseUrl} class="font-display font-bold text-lg leading-tight text-white">
         🐾 Pawspurrfect<br class="hidden sm:block" /><span class="text-sm font-normal opacity-90">Pet Care Service</span>
       </a>
-      <!-- Desktop Nav -->
       <nav class="hidden md:flex items-center gap-6 text-sm font-semibold">
         <a href={baseUrl} class="text-white hover:text-[#F5C518] transition-colors">Home</a>
-        <a href={`${baseUrl}/-about`} class="text-white hover:text-[#F5C518] transition-colors">About Me</a>
+        <a href={`${baseUrl}/-about`} class="text-white hover:text-[#F5C518] transition-colors">About Us</a>
         <a href={`${baseUrl}/-location`} class="text-white hover:text-[#F5C518] transition-colors">Our Location</a>
         <a href={`${baseUrl}/-pet-plans`} class="text-[#F5C518]">Pet Care Plans</a>
         <a href={`${baseUrl}/-contact`} class="bg-[#F5C518] text-[#1C3F1B] px-4 py-2 rounded font-bold hover:bg-yellow-400 transition-colors">Contact Us</a>
       </nav>
-      <!-- Mobile Hamburger -->
       <button id="menu-toggle" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Open menu">
         <span class="block w-6 h-0.5 bg-white"></span>
         <span class="block w-6 h-0.5 bg-white"></span>
         <span class="block w-6 h-0.5 bg-white"></span>
       </button>
     </div>
-    <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden md:hidden bg-[#1C3F1B] px-4 pb-4">
       <nav class="flex flex-col gap-3 text-sm font-semibold pt-2">
         <a href={baseUrl} class="text-white hover:text-[#F5C518] py-1 border-b border-[#2D6A2C]">Home</a>
-        <a href={`${baseUrl}/-about`} class="text-white hover:text-[#F5C518] py-1 border-b border-[#2D6A2C]">About Me</a>
+        <a href={`${baseUrl}/-about`} class="text-white hover:text-[#F5C518] py-1 border-b border-[#2D6A2C]">About Us</a>
         <a href={`${baseUrl}/-location`} class="text-white hover:text-[#F5C518] py-1 border-b border-[#2D6A2C]">Our Location</a>
         <a href={`${baseUrl}/-pet-plans`} class="text-[#F5C518] py-1 border-b border-[#2D6A2C]">Pet Care Plans</a>
         <a href={`${baseUrl}/-contact`} class="text-white hover:text-[#F5C518] py-1">Contact Us</a>
@@ -54,19 +46,26 @@ const baseUrl  = "/P2460";
     </div>
   </header>
 
-  <!-- Page Hero -->
-  <section class="bg-[#2D6A2C] py-14">
-    <div class="max-w-6xl mx-auto px-4">
-      <h1 class="text-4xl md:text-5xl font-display font-bold text-white mb-3">My Pet Care Plans</h1>
-      <p class="text-white/80 text-lg max-w-xl">Here at Paws Purrfect I have the perfect plan for your pet, be it weekly visits, monthly care, or a one-off holiday cover. Everything is tailored to suit you and your pet's needs.</p>
+  <!-- Page Hero — full-bleed image -->
+  <section class="relative min-h-[45vh] flex items-end overflow-hidden pb-12">
+    <img
+      src="/P2460/images/slide3.jpg"
+      alt="Our Pet Care Plans"
+      class="absolute inset-0 w-full h-full object-cover object-center"
+      fetchpriority="high"
+    />
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="relative z-10 max-w-6xl mx-auto px-4 w-full">
+      <h1 class="text-4xl md:text-5xl font-display font-bold text-white mb-3">Our Pet Care Plans</h1>
+      <p class="text-white/80 text-lg max-w-xl">Here at Paws Purrfect we have the perfect plan for your pet, be it weekly visits, monthly care, or a one-off holiday cover. Everything is tailored to suit you and your pet's needs.</p>
     </div>
   </section>
 
-  <!-- Plans Intro -->
+  <!-- Intro -->
   <section class="py-10 bg-white border-b border-[#B8D9B6]">
     <div class="max-w-6xl mx-auto px-4 text-center">
       <p class="text-[#3D5C3C] max-w-2xl mx-auto">
-        So give me a call today to discuss your requirements. Every plan is tailored to the individual, and I'm happy to arrange a free consultation before you commit to anything.
+        So give us a call today to discuss your requirements. Every plan is tailored to the individual, and we're happy to arrange a free consultation before you commit to anything.
       </p>
     </div>
   </section>
@@ -75,21 +74,19 @@ const baseUrl  = "/P2460";
   <section class="py-16 bg-[#F0F7EF]">
     <div class="max-w-6xl mx-auto px-4">
       <div class="grid md:grid-cols-2 gap-10 items-center">
-        <div class="bg-[#2D6A2C] rounded-2xl p-8 text-center text-white">
-          <span class="text-6xl block mb-4">🏠</span>
-          <div class="text-3xl font-display font-bold mb-1">From £15</div>
-          <div class="text-white/70 text-sm">per day (24 hours)</div>
-          <div class="text-white/60 text-xs mt-1">*Depending on care needed</div>
+        <div class="rounded-2xl overflow-hidden">
+          <img src="/P2460/images/slide4.jpg" alt="Home from Home boarding" class="w-full h-64 object-cover" loading="lazy" width="600" height="400" />
         </div>
         <div>
-          <h2 class="text-2xl font-display font-bold text-[#1C3F1B] mb-3">🏠 Home from Home Boarding</h2>
+          <h2 class="text-2xl font-display font-bold text-[#1C3F1B] mb-1">🏠 Home from Home Boarding</h2>
+          <p class="text-2xl font-display font-bold text-[#2D6A2C] mb-4">From £15 per day (24 hours)</p>
           <p class="text-[#3D5C3C] mb-4">
-            Home from home boarding is an approved and licensed service regulated by Bradford Council, offered as a solution to those dogs that may become stressed staying in a kennel environment. Your dog instead will stay with me in my home with all the creature comforts they deserve.
+            Home from home boarding is an approved and licensed service regulated by Bradford Council, offered as a solution to those dogs that may become stressed staying in a kennel environment. Your dog instead will stay with us in our home with all the creature comforts they deserve.
           </p>
           <p class="text-[#3D5C3C] mb-4">
-            To make your dog feel more at home you are welcome to bring their own bed, favourite toys, feeding bowl and lead so they have familiar items with them. This service is most popular for customers going on holiday, so why not let your dog have a holiday too!
+            To make your dog feel more at home, you are welcome to bring their own bed, favourite toys, feeding bowl and lead so they have familiar items with them. This service is most popular for customers going on holiday, so why not let your dog have a holiday too!
           </p>
-          <div class="bg-[#F5C518]/20 border border-[#F5C518] rounded-lg p-3 text-sm text-[#1C3F1B] mb-5">
+          <div class="bg-amber-50 border border-amber-200 rounded-lg p-3 text-sm text-[#1C3F1B] mb-5">
             <strong>Please note:</strong> This service is only available to one dog at any given time, or two dogs if they are from the same household. All vaccinations must be up to date.
           </div>
           <a href={`${baseUrl}/-contact`} class="inline-block bg-[#2D6A2C] text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-[#1C3F1B] transition-colors">
@@ -105,28 +102,23 @@ const baseUrl  = "/P2460";
     <div class="max-w-6xl mx-auto px-4">
       <div class="grid md:grid-cols-2 gap-10 items-center">
         <div class="order-2 md:order-1">
-          <h2 class="text-2xl font-display font-bold text-[#1C3F1B] mb-3">🏡 Pet Visiting</h2>
+          <h2 class="text-2xl font-display font-bold text-[#1C3F1B] mb-1">🏡 Pet Visiting</h2>
+          <p class="text-2xl font-display font-bold text-[#2D6A2C] mb-4">From £6 (30 min) / £9 (1 hour)</p>
           <p class="text-[#3D5C3C] mb-4">
-            For whatever reason, if you can't be there, I can be called on to visit your pet at home to provide support or stimulation in whatever shape or form you require. Whether it's feeding, emptying the cat litter, or grooming your pet, I can help.
+            For whatever reason, if you can't be there, we can be called on to visit your pet at home to provide support or stimulation in whatever shape or form you require, be it to provide feed, empty cat litter or groom your pet.
           </p>
           <p class="text-[#3D5C3C] mb-4">
-            This service can be extended to house checks, including drawing curtains, plant or garden care, and picking up mail.
+            This service can be extended to house checks including drawing curtains, plant or garden care, and picking up mail.
           </p>
-          <div class="bg-[#F5C518]/20 border border-[#F5C518] rounded-lg p-3 text-sm text-[#1C3F1B] mb-5">
+          <div class="bg-amber-50 border border-amber-200 rounded-lg p-3 text-sm text-[#1C3F1B] mb-5">
             <strong>Please note:</strong> Day care visiting services are not suitable if dogs are going to be left alone at home overnight.
           </div>
           <a href={`${baseUrl}/-contact`} class="inline-block bg-[#2D6A2C] text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-[#1C3F1B] transition-colors">
             Enquire now
           </a>
         </div>
-        <div class="order-1 md:order-2 bg-[#1A6BA0] rounded-2xl p-8 text-center text-white">
-          <span class="text-6xl block mb-4">🏡</span>
-          <div class="text-3xl font-display font-bold mb-1">From £6</div>
-          <div class="text-white/70 text-sm">for a 30 minute visit</div>
-          <div class="border-t border-white/20 mt-4 pt-4">
-            <div class="text-2xl font-display font-bold mb-1">£9</div>
-            <div class="text-white/70 text-sm">for a 1 hour visit</div>
-          </div>
+        <div class="order-1 md:order-2 rounded-2xl overflow-hidden">
+          <img src="/P2460/images/slide5.jpg" alt="Pet visiting service" class="w-full h-64 object-cover" loading="lazy" width="600" height="400" />
         </div>
       </div>
     </div>
@@ -136,24 +128,19 @@ const baseUrl  = "/P2460";
   <section class="py-16 bg-[#F0F7EF]">
     <div class="max-w-6xl mx-auto px-4">
       <div class="grid md:grid-cols-2 gap-10 items-center">
-        <div class="bg-[#2D6A2C] rounded-2xl p-8 text-center text-white">
-          <span class="text-6xl block mb-4">🦮</span>
-          <div class="text-3xl font-display font-bold mb-1">From £6</div>
-          <div class="text-white/70 text-sm">for a 30 minute walk</div>
-          <div class="border-t border-white/20 mt-4 pt-4">
-            <div class="text-2xl font-display font-bold mb-1">£9</div>
-            <div class="text-white/70 text-sm">for a 1 hour walk</div>
-          </div>
-          <div class="mt-4 text-white/60 text-xs">Discounts available for regular bookings</div>
+        <div class="rounded-2xl overflow-hidden">
+          <img src="/P2460/images/slide6.jpg" alt="Dog walking service" class="w-full h-64 object-cover" loading="lazy" width="600" height="400" />
         </div>
         <div>
-          <h2 class="text-2xl font-display font-bold text-[#1C3F1B] mb-3">🦮 Dog Walking</h2>
+          <h2 class="text-2xl font-display font-bold text-[#1C3F1B] mb-1">🦮 Dog Walking</h2>
+          <p class="text-2xl font-display font-bold text-[#2D6A2C] mb-4">From £6 (30 min) / £9 (1 hour)</p>
           <p class="text-[#3D5C3C] mb-4">
-            Ideal for those who are at work or unable to walk their pet due to other commitments. Exercise is tailored to each individual's requirements, be it a long run across the moor or a gentle stroll on their favourite walk.
+            Ideal for those who are at work or unable to walk their pet due to other commitments. Exercise is tailored to each individual's requirements, be it a long run across the moor or a short stroll on their favourite walk.
           </p>
           <p class="text-[#3D5C3C] mb-5">
-            On their return your dog will be towel dried, fed and watered if required. And with Addingham Moorside and Farnhill Moor right on my doorstep, your dog will be in their element.
+            On their return, your dog will be towel dried, fed and watered if required. And with Addingham Moorside and Farnhill Moor right on our doorstep, your dog will be in their element.
           </p>
+          <p class="text-[#3D5C3C] text-sm italic mb-5">Discounts available for regular bookings.</p>
           <a href={`${baseUrl}/-contact`} class="inline-block bg-[#2D6A2C] text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-[#1C3F1B] transition-colors">
             Enquire now
           </a>
@@ -167,57 +154,49 @@ const baseUrl  = "/P2460";
     <div class="max-w-6xl mx-auto px-4">
       <div class="grid md:grid-cols-2 gap-10 items-center">
         <div class="order-2 md:order-1">
-          <h2 class="text-2xl font-display font-bold text-[#1C3F1B] mb-3">🚗 Pet Taxi</h2>
+          <h2 class="text-2xl font-display font-bold text-[#1C3F1B] mb-1">🚗 Pet Taxi</h2>
+          <p class="text-2xl font-display font-bold text-[#2D6A2C] mb-4">From £6 (30 min) / £9 (1 hour) + 60p/mile</p>
           <p class="text-[#3D5C3C] mb-4">
-            Whether it's a short journey to the vets or your pet's pressing engagements at the local grooming parlour, I'm here to provide safe transport to accompany your pet, or to drive both you and your loved one to any destination you need.
+            Whether a short journey to the vets or your pet's pressing engagements at the local grooming parlour, we are here to provide transport to accompany your pet, or to drive both you and your loved one to any destination you desire.
           </p>
-          <p class="text-[#3D5C3C] mb-5">
-            My pet taxi service ensures your animal travels comfortably and safely, with a familiar, caring face alongside them every step of the way.
-          </p>
+          <p class="text-[#3D5C3C] text-sm italic mb-5">Plus 60p per mile to destination and return trip.</p>
           <a href={`${baseUrl}/-contact`} class="inline-block bg-[#2D6A2C] text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-[#1C3F1B] transition-colors">
             Enquire now
           </a>
         </div>
-        <div class="order-1 md:order-2 bg-[#1A6BA0] rounded-2xl p-8 text-center text-white">
-          <span class="text-6xl block mb-4">🚗</span>
-          <div class="text-3xl font-display font-bold mb-1">From £6</div>
-          <div class="text-white/70 text-sm">per 30 minutes</div>
-          <div class="border-t border-white/20 mt-4 pt-4">
-            <div class="text-2xl font-display font-bold mb-1">£9</div>
-            <div class="text-white/70 text-sm">per 1 hour</div>
-          </div>
-          <div class="mt-4 text-white/60 text-xs">+ 60p per mile (destination &amp; return)</div>
+        <div class="order-1 md:order-2 rounded-2xl overflow-hidden">
+          <img src="/P2460/images/large-13.jpg" alt="Pet taxi service" class="w-full h-64 object-cover" loading="lazy" width="600" height="400" />
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Quick Pricing Summary -->
+  <!-- Pricing Summary -->
   <section class="py-12 bg-[#1C3F1B]">
     <div class="max-w-6xl mx-auto px-4">
       <h2 class="text-2xl font-display font-bold text-white text-center mb-8">Pricing at a glance</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <div class="bg-white/10 border border-white/20 rounded-xl p-5 text-center text-white">
           <div class="text-2xl mb-2">🏠</div>
-          <div class="font-display font-bold text-base mb-1">Home Boarding</div>
+          <div class="font-display font-bold text-base mb-1 text-white">Home Boarding</div>
           <div class="text-[#F5C518] font-bold text-lg">From £15/day</div>
           <div class="text-white/60 text-xs mt-1">24 hours</div>
         </div>
         <div class="bg-white/10 border border-white/20 rounded-xl p-5 text-center text-white">
           <div class="text-2xl mb-2">🏡</div>
-          <div class="font-display font-bold text-base mb-1">Pet Visiting</div>
+          <div class="font-display font-bold text-base mb-1 text-white">Pet Visiting</div>
           <div class="text-[#F5C518] font-bold text-lg">£6 / £9</div>
           <div class="text-white/60 text-xs mt-1">30 min / 1 hour</div>
         </div>
         <div class="bg-white/10 border border-white/20 rounded-xl p-5 text-center text-white">
           <div class="text-2xl mb-2">🦮</div>
-          <div class="font-display font-bold text-base mb-1">Dog Walking</div>
+          <div class="font-display font-bold text-base mb-1 text-white">Dog Walking</div>
           <div class="text-[#F5C518] font-bold text-lg">£6 / £9</div>
           <div class="text-white/60 text-xs mt-1">30 min / 1 hour + discounts</div>
         </div>
         <div class="bg-white/10 border border-white/20 rounded-xl p-5 text-center text-white">
           <div class="text-2xl mb-2">🚗</div>
-          <div class="font-display font-bold text-base mb-1">Pet Taxi</div>
+          <div class="font-display font-bold text-base mb-1 text-white">Pet Taxi</div>
           <div class="text-[#F5C518] font-bold text-lg">£6 / £9</div>
           <div class="text-white/60 text-xs mt-1">+ 60p/mile</div>
         </div>
@@ -229,9 +208,9 @@ const baseUrl  = "/P2460";
   <section class="py-12 bg-[#F5C518]">
     <div class="max-w-3xl mx-auto px-4 text-center">
       <h2 class="text-2xl font-display font-bold text-[#1C3F1B] mb-3">Not sure which plan is right for you?</h2>
-      <p class="text-[#1C3F1B]/80 mb-6">Give me a call and I'll happily talk you through the options. The first consultation is always free and there's no obligation.</p>
+      <p class="text-[#1C3F1B]/80 mb-6">Give us a call and we'll happily talk you through the options. The first consultation is always free and there's no obligation.</p>
       <div class="flex flex-col sm:flex-row gap-3 justify-center">
-        <a href="tel:+447703368164" class="bg-[#1C3F1B] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#2D6A2C] transition-colors">
+        <a href="tel:07703368164" class="bg-[#1C3F1B] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#2D6A2C] transition-colors">
           📞 Call 07703368164
         </a>
         <a href={`${baseUrl}/-contact`} class="border-2 border-[#1C3F1B] text-[#1C3F1B] px-6 py-3 rounded-lg font-bold hover:bg-[#1C3F1B] hover:text-white transition-colors">
@@ -246,24 +225,24 @@ const baseUrl  = "/P2460";
     <div class="max-w-6xl mx-auto px-4">
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-8">
         <div>
-          <h3 class="font-display font-bold text-lg mb-3">🐾 Pawspurrfect</h3>
+          <h3 class="font-display font-bold text-lg mb-3 text-white">🐾 Pawspurrfect</h3>
           <p class="text-white/70 text-sm leading-relaxed">Specialist pet care when you can't be there. Family run, fully insured, Bradford Council regulated and NARP registered.</p>
         </div>
         <div>
-          <h3 class="font-display font-bold text-base mb-3">Pages</h3>
+          <h3 class="font-display font-bold text-base mb-3 text-white">Pages</h3>
           <ul class="space-y-2 text-sm">
             <li><a href={baseUrl} class="text-white/70 hover:text-white transition-colors">Home</a></li>
-            <li><a href={`${baseUrl}/-about`} class="text-white/70 hover:text-white transition-colors">About Me</a></li>
+            <li><a href={`${baseUrl}/-about`} class="text-white/70 hover:text-white transition-colors">About Us</a></li>
             <li><a href={`${baseUrl}/-location`} class="text-white/70 hover:text-white transition-colors">Our Location</a></li>
             <li><a href={`${baseUrl}/-pet-plans`} class="text-white/70 hover:text-white transition-colors">Pet Care Plans</a></li>
             <li><a href={`${baseUrl}/-contact`} class="text-white/70 hover:text-white transition-colors">Contact Us</a></li>
           </ul>
         </div>
         <div>
-          <h3 class="font-display font-bold text-base mb-3">Contact</h3>
+          <h3 class="font-display font-bold text-base mb-3 text-white">Contact</h3>
           <ul class="space-y-2 text-sm text-white/70">
-            <li>📍 Arbour Top, Keighley</li>
-            <li><a href="tel:+447703368164" class="hover:text-white transition-colors">📞 07703368164</a></li>
+            <li>📍 Silsden, West Yorkshire</li>
+            <li><a href="tel:07703368164" class="hover:text-white transition-colors">📞 07703368164</a></li>
             <li><a href="mailto:enquiries@pawspurrfect.co.uk" class="hover:text-white transition-colors">✉️ enquiries@pawspurrfect.co.uk</a></li>
           </ul>
         </div>
