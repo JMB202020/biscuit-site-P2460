@@ -120,7 +120,8 @@ const baseUrl = "/P2460";
         <!-- Contact Form -->
         <div>
           <h2 class="text-2xl font-display font-bold text-[#1C3F1B] mb-6">Send a Message</h2>
-          <form action="https://formspree.io/f/mwvaaojq" method="POST" class="space-y-5">
+          <form action="/api/contact" method="POST" class="space-y-5">
+            <input type="hidden" name="_site_id" value="P2460" /><input type="hidden" name="_business_name" value="Pawspurrfect Pet Care Service" /><input type="hidden" name="_business_email" value="enquiries@pawspurrfect.co.uk" /><div style="position:absolute;left:-9999px" aria-hidden="true"><input type="text" name="_hp" tabindex="-1" autocomplete="off" /></div>
             <div>
               <label for="name" class="block text-sm font-semibold text-[#1C3F1B] mb-1">Your name</label>
               <input
